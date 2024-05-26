@@ -16,7 +16,7 @@ This project is a React Native application for Kamoa, which allows users to uplo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/kamoa-app.git
+    git clone https://github.com/loneverse/kamoa-app.git
     ```
 
 2. Navigate to the project directory:
@@ -31,7 +31,7 @@ This project is a React Native application for Kamoa, which allows users to uplo
 
 4. Run the application:
     ```bash
-    npm start
+    npx react-native run-android 
     ```
 
 ## File Structure
@@ -58,3 +58,5 @@ Each screen is implemented to closely match the provided design, including the t
 ## License
 
 This project is licensed under the MIT License.
+
+[Kamoa App Walkthrough.webm](..%2F..%2FKamoa%20App%20Walkthrough.webm)
