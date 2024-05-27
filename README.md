@@ -16,7 +16,7 @@ This project is a React Native application for Kamoa, which allows users to uplo
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/loneverse/kamoa-app.git
+    git clone https://github.com/loneverse/KamoaApp_CodingTest.git
     ```
 
 2. Navigate to the project directory:
