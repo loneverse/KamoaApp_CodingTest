@@ -28,8 +28,11 @@ This project is a React Native application for Kamoa, which allows users to uplo
     ```bash
     npm install
     ```
-
-4. Run the application:
+4. Start the server on a new terminal:
+    ```bash
+     npx react-native start
+    ```
+5. Run the application :
     ```bash
     npx react-native run-android 
     ```
@@ -59,4 +62,4 @@ Each screen is implemented to closely match the provided design, including the t
 
 This project is licensed under the MIT License.
 
-[Kamoa App Walkthrough.webm](..%2F..%2FKamoa%20App%20Walkthrough.webm)
+[Kamoa app walkthrough](https://github.com/loneverse/KamoaApp_CodingTest/assets/47101888/28e7a215-569c-453e-ba0e-94a294ebb16b)
