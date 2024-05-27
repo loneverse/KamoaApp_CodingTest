@@ -21,7 +21,7 @@ This project is a React Native application for Kamoa, which allows users to uplo
 
 2. Navigate to the project directory:
     ```bash
-    cd kamoa-app
+    cd KamoaApp
     ```
 
 3. Install dependencies:
@@ -51,12 +51,12 @@ This project is a React Native application for Kamoa, which allows users to uplo
 ## Usage
 
 - **UploadStatementScreen**: Guides users to upload their M-Pesa statement.
-- **HowToUploadScreen**: Provides step-by-step instructions on obtaining the statement, includes a file select button and a code input field.
+- **HowToUploadScreen**: Provides step-by-step instructions on obtaining the statement, including a file select button and a code input field.
 - **AcceptPermissionsScreen**: Requests permissions necessary for the app functionality.
 
 ## Comments
 
-Each screen is implemented to closely match the provided design, including the text formatting, icons, and buttons. The `CustomButton` component should be implemented to handle button presses and navigation between screens.
+Each screen is implemented to closely match the provided design, including the text formatting, icons, and buttons. The `CustomButton` component is implemented to handle button presses and navigation between screens.
 
 ## License
 
