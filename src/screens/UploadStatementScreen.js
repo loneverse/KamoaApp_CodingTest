@@ -8,26 +8,24 @@ const UploadStatementScreen = ({ navigation }) => {
       <Image source={require('../assets/kamoa_logo.png')} style={styles.logo} />
       <Text style={styles.title}>Upload a 6 month M-Pesa Statement</Text>
       <Image source={require('../assets/upload_statement.png')} style={styles.image} />
-      <Text style={styles.text}>
+
+      <View style={styles.textBlock}>
         <Text style={styles.boldText}>Unlock the power of Kamoa with your M-Pesa</Text>
-      </Text>
-      <Text style={styles.subText}>
-        Get access to the marketplace and help lenders see the real you by uploading a six month m-pesa statement
-      </Text>
+        <Text style={styles.subText}>Get access to the marketplace and help lenders see the real you by uploading a six month m-pesa statement</Text>
+      </View>
       <View style={styles.separator} />
-      <Text style={styles.text}>
+
+      <View style={styles.textBlock}>
         <Text style={styles.boldText}>Get insights on your spending habits</Text>
-      </Text>
-      <Text style={styles.subText}>
-        Kamoa helps you understand your spending and track your finances every time you upload a statement
-      </Text>
+        <Text style={styles.subText}>Kamoa helps you understand your spending and track your finances every time you upload a statement</Text>
+      </View>
       <View style={styles.separator} />
-      <Text style={styles.text}>
+
+      <View style={styles.textBlock}>
         <Text style={styles.boldText}>Secure a higher loan limit</Text>
-      </Text>
-      <Text style={styles.subText}>
-        Users that share more information get access to higher loan limits with flexible payments and low interest rates
-      </Text>
+        <Text style={styles.subText}>Users that share more information get access to higher loan limits with flexible payments and low interest rates</Text>
+      </View>
+
       {/* Progress Bar */}
       <View style={styles.progressContainer}>
         <Text style={styles.progressLabel}>Step 1/3</Text>
@@ -36,13 +34,14 @@ const UploadStatementScreen = ({ navigation }) => {
           <View style={[styles.progressOrange, { width: '66.67%' }]}></View>
         </View>
       </View>
+
       <CustomButton
         title="NEXT"
         onPress={() => navigation.navigate('HowToUpload')}
-        style={styles.button}
+        style={[styles.button, { backgroundColor: '#5eb784' }]}
       />
       <TouchableOpacity onPress={() => navigation.navigate('HowToUpload')}>
-              <Text style={styles.backText}>Back to Login</Text>
+        <Text style={styles.backText}>Back to Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -67,32 +66,40 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 10,
-    marginTop: -15
+    marginTop: -15,
   },
   image: {
     width: 100,
     height: 100,
     marginVertical: 10,
   },
+  textBlock: {
+    alignItems: 'flex-start',
+    width: '100%',
+    paddingHorizontal: 16,
+    marginBottom: 5,
+  },
   text: {
     fontSize: 16,
-    textAlign: 'center',
+    textAlign: 'left',
     fontFamily: 'Roboto',
     marginVertical: 5,
   },
   subText: {
     fontSize: 12,
-    textAlign: 'center',
+    textAlign: 'left',
     marginVertical: 5,
   },
   boldText: {
     fontWeight: 'bold',
+    textAlign: 'left',
+    fontSize: 16,
   },
   separator: {
-    width: '80%',
     height: 1,
     backgroundColor: '#ccc',
-    marginVertical: 10,
+    marginVertical: 5,
+    width: '100%',
   },
   progressContainer: {
     alignItems: 'center',
@@ -120,6 +127,9 @@ const styles = StyleSheet.create({
   button: {
     alignSelf: 'center',
     marginVertical: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
   },
   backText: {
     color: '#000000',

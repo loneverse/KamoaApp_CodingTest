@@ -77,11 +77,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFF5E5'
   },
   title: {
-    fontSize: 20,
+    fontSize: 23,
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 10,
-    marginTop: -15
+    marginTop: -15,
+    fontFamily: 'Roboto'
   },
   logo: {
     width: 200,
